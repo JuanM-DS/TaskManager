@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Src/" />
+  <Folder Name="/Src/TaskManager.Client/">
+    <Project Path="TaskManagner.Client/TaskManagner.Client.csproj" Id="1d3e3435-4dad-4250-91b5-3bad8daa021c" />
+  </Folder>
+  <Folder Name="/Src/TaskManager.Server/">
+    <Project Path="TaskManager.WebApp/TaskManager.WebApp.csproj" Id="9b39f23f-7e85-46c7-9a3c-fb06fc249700" />
+  </Folder>
+</Solution>
