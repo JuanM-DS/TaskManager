@@ -6,12 +6,12 @@ namespace TaskManager.Domain.Entities
     {
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public string Background { get; set; } = string.Empty;
+        public string BackgroundUrl { get; set; } = string.Empty;
         public int ColorId { get; set; }
         public Guid SpaceId { get; set; }
 
         public Space Space { get; set; } = null!;
-        public Color Color { get; set; } = null!;
+        public AppColor Color { get; set; } = null!;
         public ICollection<UserBoard> UserBoards { get; set; } = [];
 
         public DateTime Created { get; set; }

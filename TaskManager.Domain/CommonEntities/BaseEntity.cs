@@ -1,7 +1,7 @@
 ﻿namespace TaskManager.Domain.CommonEntities
 {
-    public class BaseEntity<T>
+    public class BaseEntity<T> where T : notnull
     {
-        public required T Id { get; set; }
+        public T Id { get; private set; } = default!;
     }
 }

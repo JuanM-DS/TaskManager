@@ -8,6 +8,7 @@ namespace TaskManager.Domain.Entities
         public string Description { get; set; } = string.Empty;
 
         public Guid TaskId { get; set; }
+        public TaskItem TaskItem { get; set; } = null!;
 
         public DateTime Created { get; set; }
         public string CreatedBy { get; set; } = string.Empty;
