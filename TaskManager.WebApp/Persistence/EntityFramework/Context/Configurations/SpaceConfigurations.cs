@@ -13,11 +13,11 @@ namespace TaskManager.WebApp.Persistence.EntityFramework.Context.Configurations
 
             builder.Property(x => x.Title)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(40);
 
             builder.Property(x => x.Description)
                 .IsRequired()
-                .HasMaxLength(200);
+                .HasMaxLength(100);
 
             #region Auditable properties
             builder.Property(x => x.Created)

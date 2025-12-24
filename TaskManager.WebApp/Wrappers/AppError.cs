@@ -16,9 +16,9 @@ namespace TaskManager.WebApp.Wrappers
 
     public static class AppErrorExt
     {
-        public static AppError For<T>(this AppError appError, Expression<Func<T, object>> property)
+        public static AppError For<T>(this AppError appError, Expression<Func<T, object>> propertyExpression)
         {
-            var propertyName = property.Body switch
+            var propertyName = propertyExpression.Body switch
             {
                 MemberExpression m => m.Member.Name,
                 UnaryExpression { Operand: MemberExpression m } => m.Member.Name,
@@ -32,12 +32,12 @@ namespace TaskManager.WebApp.Wrappers
             );
         }
 
-        public static AppError For<T>(this AppError appError, string property)
+        public static AppError For(this AppError appError, string propertyName)
         {
             return new AppError
             (
                 Message: appError.Message,
-                PropertyName: property
+                PropertyName: propertyName
             );
         }
     }

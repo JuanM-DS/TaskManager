@@ -1,5 +1,5 @@
 ﻿namespace TaskManager.Domain.CommonEntities
 {
-    public struct Empy
+    public struct Empty
     {}
 }
