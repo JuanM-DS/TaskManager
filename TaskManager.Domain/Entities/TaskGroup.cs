@@ -8,7 +8,7 @@ namespace TaskManager.Domain.Entities
         public string Description { get; set; } = string.Empty;
         public int ColorId { get; set; }
 
-        public Color Color { get; set; } = null!;
+        public AppColor Color { get; set; } = null!;
 
         public DateTime Created { get; set; }
         public string CreatedBy { get; set; } = string.Empty;

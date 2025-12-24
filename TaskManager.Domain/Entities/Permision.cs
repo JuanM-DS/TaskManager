@@ -7,6 +7,8 @@ namespace TaskManager.Domain.Entities
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
 
+        public ICollection<TaskItem> TaskItems { get; set; } = [];
+
         public DateTime Created { get; set; }
         public string CreatedBy { get; set; } = string.Empty;
         public DateTime Updated { get; set; }

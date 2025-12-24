@@ -8,6 +8,7 @@ namespace TaskManager.Domain.Entities
         public Guid BoardId { get; set; }
         public int BoardUserRoleId { get; set; }
 
+        public Board Board { get; set; } = null!;
         public BoardUserRole BoardUserRole { get; set; } = null!;
 
         public DateTime Created { get; set; }
